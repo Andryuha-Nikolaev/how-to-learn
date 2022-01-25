@@ -22,12 +22,12 @@
 
 .logo {
   z-index: 2;
+  width: 183px;
 }
 
 .logo_place_header {
   background-image: url('../images/logo_place_header.svg');
   position: absolute;
-  width: 183px;
   height: 32px;
   top: 30px;
   left: 64px;
@@ -36,7 +36,7 @@
 .header__title {
   margin: 0;
   padding: 0;
-  width: 730px;
+  max-width: 730px;
   margin-left: 64px;
   z-index: 2;
   line-height: 96px;
@@ -48,7 +48,7 @@
   margin: 0;
   padding: 0;
   position: absolute;
-  width: 388px;
+  max-width: 388px;
   bottom: 30px;
   left: 64px;
   z-index: 2;
@@ -60,7 +60,6 @@
 .header__link {
   color: #2f80ed;
   text-decoration: none;
-
 }
 
 .header__main-illustration {
@@ -70,6 +69,8 @@
   width: 765px;
   height: 608px;
   z-index: 1;
+  object-fit: contain;
+  object-position: right bottom;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -118,9 +119,9 @@
   margin: 0 0 30px 0;
 }
 
-.two-columns__paragraph:first-child {
-  margin-top: 0;
-  }
+.two-columns__paragraph:last-of-type {
+  margin-bottom: 0;
+}
 
 .two-columns__span-accent {
   line-height: 34px;
@@ -190,7 +191,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  height: 890px;
+  min-height: 890px;
   background-color: #f2f2f2;
   background-image: url('../images/feynman.png');
   background-position: left bottom;
@@ -206,7 +207,7 @@
   line-height: 1.15;
   font-size: 120px;
   font-weight: bold;
-  width: 648px;
+  max-width: 648px;
 }
 
 .feynman__subtitle {
@@ -239,10 +240,6 @@
   background-color: #1f1f1f;
   color: white;
   padding: 90px 0;
-}
-
-.section-title_theme_dark {
-  
 }
 
 .kaufman__triangle {
@@ -324,7 +321,6 @@
 
 .logo_place_footer {
   background-image: url(../images/logo_place_footer.svg);
-  width: 183px;
   height: 35px;
 }
 
