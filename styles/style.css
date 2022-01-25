@@ -252,6 +252,14 @@
   background-size: contain;
 }
 
+.section-title_theme_dark {
+  z-index: 2;
+}
+
+.section-subtitle_theme_dark {
+  z-index: 2;
+}
+
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
